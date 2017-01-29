@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>FURNO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,500,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="menu">
+            <div class="logo" onclick="showSection1()">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="search" onclick="showSection3()">
+                <img src="image/search.png" alt="">
+            </div>
+        </aside>
+        <div class="content">
+            <section class="furno" id="first-section">
+                <div class="furno-container">
+                    <h1>Furno</h1>
+                    <h2>Newest furniture shop template</h2>
+                    <button onclick="showSection2()" class="button">View More</button>
+                </div>
+            </section>
+            <section class="products hidden" id="second-section">
+                <div class="products-header">
+                    <h2>products</h2>
+                    <div class="product-type">
+                        <h4>living room</h4>
+                        <img src="image/living-room.png" alt="">
+                    </div>
+                </div>
+                <div class="product-images">
+                    <div class="row">
+                        <div class="product one-by-one">
+                            <div class="image img1"></div>
+                            <div class="image-content">
+                                <h3>Red Seat</h3>
+                                <p>Loreum ipsum dolor sit amet</p>
+                                <h4>$45</h4>
+                            </div>
+                        </div>
+                        <div class="product three-by-one">
+                            <div class="image img2"></div>
+                            <div class="image-content">
+                                <h3>White Table</h3>
+                                <p>Loreum ipsum dolor sit amet</p>
+                                <h4>$350</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product one-by-one">
+                            <div class="image img3"></div>
+                            <div class="image-content">
+                                <h3>Blue Seat</h3>
+                                <p>Loreum ipsum dolor sit amet</p>
+                                <h4>$35</h4>
+                            </div>
+                        </div>
+                        <div class="product two-by-one">
+                            <div class="image img4"></div>
+                            <div class="image-content">
+                                <h3>Modern Bed</h3>
+                                <p>Loreum ipsum dolor sit amet</p>
+                                <h4>$120</h4>
+                            </div>
+                        </div>
+                        <div class="product one-by-one">
+                            <div class="image img5"></div>
+                            <div class="image-content">
+                                <h3>Dark Seat</h3>
+                                <p>Loreum ipsum dolor sit amet</p>
+                                <h4>$50</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="type-of-product hidden" id="third-section">
+                <div class="type-of-product-container">
+                    <div class="search">
+                        <input type="text">
+                        <span class="cross" onclick="showSection1()"></span>
+                    </div>
+                    <div class="search-by-type">Type product that you are looking for</div>
+                    <div class="searched-results">
+                        <div class="content-searched image1">
+                            <img src="image/red-seat.png" alt="">
+                            <h3>red seat</h3>
+                        </div>
+                        <div class="content-searched image2">
+                            <img src="image/dark-seat.png" alt="">
+                            <h3>dark seat</h3>
+                        </div>
+                    </div>
+                    <div class="number-of-results">
+                        <h4>1 Searched result</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="hamburger-icon" id="hamburger" onclick="menuSlideIn()">
+            <img src="image/hamburger.png" alt="">
+        </div>
+        <aside class="menu-right" id="main-menu">
+            <div class="menu-cross" id="cross" onclick="menuSlideOut()">
+                <img src="image/menu-cross.png" alt="">
+            </div>
+            <section class="menu-items">
+                <div class="item item1" onclick="showSection2()">
+                    <h4>living room</h4>
+                    <img src="image/living-room.png" alt="">
+                </div>
+                <div class="item item2" onclick="showSection2()">
+                    <h4>office</h4>
+                    <img src="image/menu-office.png" alt="">
+                </div>
+                <div class="item item3" onclick="showSection2()">
+                    <h4>for kids</h4>
+                    <img src="image/menu-kids.png" alt="">
+                </div>
+                <div class="item item4" onclick="showSection2()">
+                    <h4>kitchen</h4>
+                    <img src="image/menu-kitchen.png" alt="">
+                </div>
+                <div class="item item5" onclick="showSection2()">
+                    <h4>accessories</h4>
+                    <img src="image/menu-accessories.png" alt="">
+                </div>
+            </section>
+            <div class="categories" onclick="showSection2()">
+                <h4>Show all categories</h4>
+            </div>
+        </aside>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
